@@ -21,18 +21,18 @@ class DoubleLinkedList{
         head=NULL;
         tail=NULL;
     }
-    // void insertionAtStart(int val){
-    //     Node* new_node=new Node(val);
-    //     if(head==NULL){
-    //         head=new_node;
-    //         tail=new_node;
-    //         return;
-    //     }
-    //     new_node->next=head;
-    //     head->prev=new_node;
-    //     head=new_node;
-    //     return;
-    // }
+    void insertionAtStart(int val){
+        Node* new_node=new Node(val);
+        if(head==NULL){
+            head=new_node;
+            tail=new_node;
+            return;
+        }
+        new_node->next=head;
+        head->prev=new_node;
+        head=new_node;
+        return;
+    }
     void insertAtEnd(int val){
         Node* new_node=new Node(val);
         if(tail==NULL){ // checks if the dll is empty or not
@@ -69,6 +69,7 @@ int main()
 {
     Node* new_node=new Node(3);
     DoubleLinkedList dll;
+    dll.insertionAtStart(0); // Insert at the start
     dll.insertAtEnd(1);
     dll.insertAtEnd(2);
     dll.insertAtEnd(3);

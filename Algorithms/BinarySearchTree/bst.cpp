@@ -146,7 +146,6 @@ int main()
     cout<<"PreOrder Traversal gives :";
     preOrder(root);
     cout<<endl;
-
     //Searching
     int key;
     cout<<"Enter what you want to search :";

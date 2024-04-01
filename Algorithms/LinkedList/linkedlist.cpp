@@ -9,7 +9,7 @@ class Node{
             next=NULL;
         }
 };
-ṇ
+
 void display(Node* &head){  
     Node* temp=head;
     while(temp!=NULL){
@@ -28,6 +28,7 @@ void insertatHead(Node* &head,int val){
 void insertatTail(Node* &head,int val){
     Node* new_node=new Node(val);
     Node* temp=head;
+
     while(temp->next!=NULL){
         temp=temp->next;
     }
