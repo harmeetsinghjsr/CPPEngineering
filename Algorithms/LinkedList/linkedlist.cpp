@@ -9,7 +9,7 @@ class Node{
             next=NULL;
         }
 };
-
+ṇ
 void display(Node* &head){  
     Node* temp=head;
     while(temp!=NULL){
